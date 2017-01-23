@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/gray_light_30"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_card_search" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/sliding_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_layout_default_height"
+                android:background="@color/gray_light_30"
+                android:elevation="@dimen/app_bar_elevation"
+                app:tl_indicator_corner_radius="@dimen/tab_indicator_corner_tiny_radius"
+                app:tl_indicator_color="@color/colorPrimary"
+                app:tl_indicator_height="@dimen/tab_indicator_small_height"
+                app:tl_textSelectColor="@color/colorPrimary"
+                app:tl_textUnselectColor="@color/font_normal"
+                app:tl_tab_space_equal="false"
+                app:tl_tab_padding="@dimen/tab_bar_item_padding" />
+
+            <com.hotbitmapgg.ohmybilibili.widget.NoScrollViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_search_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sections">
+        <item>@string/section_live</item>
+        <item>@string/section_recommend</item>
+        <item>@string/section_bangumi</item>
+        <item>@string/section_more</item>
+        <item>@string/section_focus</item>
+        <item>@string/section_discover</item>
+    </string-array>
+
+    <string name="app_name">哔哩哔哩</string>
+    <string name="info_play_times_format">%d</string>
+    <string name="info_reviews_format">%d</string>
+    <string name="hotbitmapgg">hotBitmapGG</string>
+    <string name="github_link">https://github.com/HotBitmapGG</string>
+    <string name="sina_weibo_link">新浪微博:http://m.weibo.cn/users/3223089177/qq</string>
+    <string name="jianshu_link">简书:http://www.jianshu.com/notebooks/5181955/latest</string>
+    <string name="add_follow">+关注</string>
+    <string name="login_hint_account">请输入您的哔哩哔哩账号</string>
+    <string name="login_hint_password">请输入您的密码</string>
+    <string name="login">登录</string>
+    <string name="all_start">全部开始</string>
+    <string name="edit">编辑</string>
+    <string name="sp_play">播放:</string>
+    <string name="sp_total_of">共:</string>
+    <string name="sp_follow">关注:</string>
+    <string name="sp_collection">收藏:</string>
+    <string name="sp_introduction">专题简介:</string>
+    <string name="sp_videos">专题剧集</string>
+    <string name="goto_look">进去看看</string>
+    <string name="discover_search_hint">搜索视频 番剧 up主或av号</string>
+    <string name="everyone_in_the_search">大家都在搜</string>
+    <string name="look_more">查看更多</string>
+    <string name="interest_in_circle">兴趣圈</string>
+    <string name="topic_center">话题中心</string>
+    <string name="original_rank">原创排行榜</string>
+    <string name="all_rank">全区排行榜</string>
+    <string name="shop">周边商城</string>
+    <string name="game_center">游戏中心</string>
+    <string name="check_update">检查更新</string>
+    <string name="logout">退出登录</string>
+    <string name="introduction">简介</string>
+    <string name="coin">投硬币</string>
+    <string name="collection">收藏</string>
+    <string name="bangumi_follow">追番</string>
+    <string name="cache">缓存</string>
+    <string name="charging">请赐予我电量吧 !</string>
+    <string name="charg">充电</string>
+    <string name="more_charging">更多电量,更多灵感哟  o(*≧▽≦)ツ</string>
+    <string name="video_about">视频相关</string>
+    <string name="more">更多</string>
+    <string name="download">下载</string>
+    <string name="to_them">追番</string>
+    <string name="time_line">放送表</string>
+    <string name="index">索引</string>
+    <string name="bangumi_recommend">番剧推荐</string>
+    <string name="new_bangumi_serial">新番连载</string>
+    <string name="season_new_bangumi">7月新番</string>
+    <string name="season_list">分季列表</string>
+    <string name="more_new_bangumi_serial">所有连载</string>
+    <string name="change_recommend">换一波推荐</string>
+    <string name="rank">排行榜</string>
+    <string name="topic">话题</string>
+    <string name="load_more">加载中…</string>
+    <string name="search_hint">搜索视频,番剧,up主或av号</string>
+    <string name="danmaku_switch">弹幕开</string>
+    <string name="play_immediately">立即播放</string>
+    <string name="activity_center">活动中心</string>
+    <string name="dynamic">动态</string>
+    <string name="not_watch">尚未观看</string>
+    <string name="selection">选集</string>
+    <string name="please_contract_me">请承包我吧</string>
+    <string name="have_been_contracting_out_of_me">已有383人承包了这部番</string>
+    <string name="contract">承包</string>
+    <string name="contract_text">等34人七日内承包了这部番</string>
+    <string name="look_top_list">查看榜单</string>
+    <string name="commend">评论</string>
+    <string name="more_commend">更多评论</string>
+    <string name="more_commend_arrow">更多评论 >></string>
+    <string name="members">正式会员</string>
+    <string name="more_hot_comment">更多热门评论 >></string>
+    <string name="fans">粉丝</string>
+    <string name="direct_messages">私信</string>
+    <string name="live_message">TA现在还没有直播，去订阅TA的直播</string>
+    <string name="go_to_look">进去看看</string>
+    <string name="all_contribute">全部投稿</string>
+    <string name="coins_video">最近投硬币的视频</string>
+    <string name="ta_favorites">TA的收藏夹</string>
+    <string name="ta_chase_bangumi">TA的追番</string>
+    <string name="ta_quanzi">TA的圈子</string>
+    <string name="ta_play_game">TA玩的游戏</string>
+
+
+    <string name="video_init">初始化播放器…</string>
+    <string name="video_loading">加载中…</string>
+    <string name="video_error_title">Cannot play video</string>
+    <string name="video_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming tothis device.</string>
+    <string name="video_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="video_error_button">OK</string>
+
+
+    <!-- Navigation Items -->
+    <string name="item_home">主页</string>
+    <string name="item_group">关注的人</string>
+    <string name="item_tracker">我的钱包</string>
+    <string name="item_downloaded">离线缓存</string>
+    <string name="item_favourite">我的收藏</string>
+    <string name="item_history">历史记录</string>
+    <string name="item_settings">设置与帮助</string>
+    <string name="item_theme">主题选择</string>
+    <string name="item_app">应用推荐</string>
+    <string name="item_vip">我的大会员</string>
+
+
+    <!--App 介绍-->
+    <string name="about_user_head_layout">硬币: 47</string>
+    <string name="about_introduce">「哔哩哔哩」</string>
+    <string name="about_menu_action_share">分享</string>
+    <string name="about_developers">关于我</string>
+    <string name="about">关于哔哩哔哩</string>
+    <string name="about_version">V1.0</string>
+
+
+    <!--哔哩哔哩-->
+    <string name="home_tab_more">更多</string>
+    <string name="section_recommend">推荐</string>
+    <string name="section_live">直播</string>
+    <string name="section_focus">关注</string>
+    <string name="section_more">分区</string>
+    <string name="section_bangumi">番剧</string>
+    <string name="section_discover">发现</string>
+    <string name="level_text">LV2</string>
+    <string name="vip_message_1">您还不是</string>
+    <string name="vip">大会员</string>
+    <string name="vip_message_2">哦</string>
+    <string name="vip_message_3">黑科技在召唤</string>
+    <string name="immediately_opened">立即开通</string>
+    <string name="lock">锁屏</string>
+    <string name="quality_medium">清晰</string>
+    <string name="quality_smooth">流畅</string>
+    <string name="quality_super">超清</string>
+    <string name="about_app_net">© 2014-2016 Netopen.com</string>
+    <string name="all_rights_reserved">All rights reserved</string>
+    <string name="about_open_source">向开源致敬</string>
+    <string name="about_network_diagnosis">网络诊断</string>
+    <string name="about_share">分享</string>
+    <string name="about_feedback">意见反馈</string>
+    <string name="hot_recommend">热门推荐</string>
+    <string name="goin_and_see">进去看看</string>
+    <string name="all_dynamic">全区动态</string>
+    <string name="new_videos">最新视频</string>
+    <string name="hot_videos">最热视频</string>
+    <string name="news_videos">最新视频</string>
+    <string name="github_url">https://github.com/HotBitmapGG/bilibili-android-client</string>
+    <string name="share_title">分享哔哩哔哩App</string>
+    <string name="feedback_titlle">意见反馈</string>
+    <string name="feedback_message">如果您有任何意见或者发现了Bug，可以在GitHub上给我提Issuse，我会第一时间关注并解决，谢谢。</string>
+    <string name="load_more_no_text">╮(╯3╰)╭ 没有更多数据了</string>
+    <string name="about_tag">标签相关</string>
+    <string name="tag_edit">编辑</string>
+
+</resources>

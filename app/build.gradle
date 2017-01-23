@@ -1,0 +1,106 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+
+    }
+}
+
+apply plugin: 'com.android.application'
+
+Properties props = new Properties()
+props.load(new FileInputStream(file("configuration.properties")))
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+
+    defaultConfig {
+        applicationId "com.hotbitmapgg.ohmybilibili"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode props.getAt("versionCode") as int
+        versionName props['versionName']
+
+        jackOptions {
+            enabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            shrinkResources false
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            zipAlignEnabled true
+            shrinkResources false
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+            debuggable true
+            jniDebuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions{
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.5.3'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar'
+    compile 'com.zhy:flowlayout-lib:1.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.6.0'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.6.0'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.6.1'
+    compile 'tv.danmaku.ijk.media:ijkplayer-x86:0.6.1'
+    compile 'com.trello:rxlifecycle-components:0.6.1'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.3.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.3.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-design:0.3.0'
+    compile 'com.facebook.stetho:stetho:1.3.1'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.3.1'
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    compile 'com.bilibili:magicasakura:0.1.1@aar'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile "com.github.VictorAlbertos.RxCache:runtime:1.6.4"
+    compile 'com.github.VictorAlbertos.Jolyglot:gson:0.0.3'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+}
