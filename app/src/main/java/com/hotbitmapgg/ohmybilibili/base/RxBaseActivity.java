@@ -21,7 +21,7 @@ import butterknife.Unbinder;
  * Created by hcc on 16/8/7 21:18
  * 100332338@qq.com
  * <p/>
- * Activity基类
+ * Activity基类  ycy
  */
 public abstract class RxBaseActivity extends RxAppCompatActivity implements CardPickerDialog.ClickListener
 {
